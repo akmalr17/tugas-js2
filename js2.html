@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwnghitung Kurs Rupiah</title>
+</head>
+<body>
+    <script>
+        function total(){
+            const DOLLAR = 14650.0;
+            let dolar = document.getElementById("uang").value;
+            //console.log("uang : " + dolar)
+            let rupiah = dolar * DOLLAR;
+            //console.log("totalnya :" + rupiah)
+            let hasil = document.getElementById("hasil");
+            hasil.innerHTML = "Totalnya : " + rupiah + "Rupiah"
+        }
+    </script>
+    <h3>
+        Mengitung Kurs Rupiah
+    </h3>
+    <div>
+        Jumlah uang :
+        <input type="number" value="" id="uang">
+    </div>
+    <br>
+    <div>
+        <button onclick="total()">Total</button>
+    </div>
+    <br>
+    <div>
+        <span id="hasil"></span>
+    </div>
+</body>
+</html>
